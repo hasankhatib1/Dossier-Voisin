@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> GitHub ex1 </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style/style.css">
+</head>
+<body>
+
+<!-- 
+
+
+Etudiant@Webforce3  ~
+$
+
+Etudiant@Webforce3  ~
+$ cd documents
+
+Etudiant@Webforce3  ~/documents
+$ pwd
+/c/Users/Etudiant/documents
+
+Etudiant@Webforce3  ~/documents
+$ cd Hasan
+
+Etudiant@Webforce3  ~/documents/Hasan
+$ cd GitHub
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub
+$ cd TP1/ex1
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ ls
+index.html
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ ls -l
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git add index.html      (===> c-à-d ajouter la fichier index.html pour "versionner")
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git commit -m "creation index.html"   (===> c-à-d créer ma 1ère version)
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git status
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git add index.html image   (===> c-à-d ajouter la fichier index.html et le dossier "image" pour "versionner")
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git commit -m "ajout d'une image"  (===> c-à-d créer une nouvelle version)
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git add index.html
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git commit -m "ajout d'une liste des amis"
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git status
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git add style index.html
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git commit -m "ajout du style (fichier css"
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git log   (===> voir l'historique de modifications)
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git checkout -- image  (===> recupperer les modifications sur le fichier (ici récuperer une image supprimer qui se trouve dans le dossier "image"))
+
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git branch dev-contacts  (===> créer une branche (dev_contacts)
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git branch
+  dev-contacts
+* master
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git --help
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git checkout dev-contacts      (==> passer sur la branche crée (dev-contacts))
+Switched to branch 'dev-contacts'
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (dev-contacts)
+$ git add contacts.html
+fatal: pathspec 'contacts.html' did not match any files
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (dev-contacts)
+$ git commit -m "ajout un fichier contacts.html"
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git checkout master      (==> revenir sur la version (master))
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ clear all
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git diff master..dev-contacts  (===> montrer la différence entre la version principale (master) et version "branche" (dev-contacts))
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git merge dev-contacts  ( ====> merger ou fousionner la branche (dev-contacts) avec le (master))
+
+
+Etudiant@Webforce3  ~/documents/Hasan/GitHub/TP1/ex1 (master)
+$ git branch -d dev-contacts               (=====> détruire la branche (dev_contacts))               
+Deleted branch dev-contacts (was 647cf74).
+
+
+
+
+ -->
+
+<h1> Ma page </h1>
+
+<h2> ma page modifié v1</h2>
+<img src="./image/Marseille-deluxe1.jpg">
+
+<h3> les loisirs </h3>
+
+<p>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime molestias atque fugit pariatur tempore quibusdam! Similique voluptate, nisi possimus commodi obcaecati, magnam eum porro error vel sunt ipsum sit voluptatibus.
+</p>
+
+<h3> les amis </h3>
+
+<p> Ami 1 </p>
+<p> Ami 2 </p>
+<p> Ami 3 </p>
+
+<p>
+	Lorem ipsum dolor sit amet.
+</p>
+
+<a href="contacts.html"> Contacts</a>
+
+</body>
+</html>
